@@ -1,4 +1,4 @@
-name: Docs: Check and Deploy
+name: 'Docs: Check and Deploy'
 
 on:
   push:
