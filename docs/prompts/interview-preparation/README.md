@@ -1,6 +1,7 @@
 # Interview Preparation Prompts
 
 A place for prompts to help with interview prep:
+
 - Mock technical interviews  
 - Behavioral question coaching  
 - Resume/CV critiques  
