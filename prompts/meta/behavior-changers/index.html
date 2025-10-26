@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#behavior-changers" class="md-skip">
+        <a href="#description" class="md-skip">
           Skip to content
         </a>
       
@@ -541,15 +541,6 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#behavior-changers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Behavior Changers
-    </span>
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#description" class="md-nav__link">
@@ -1181,15 +1172,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#behavior-changers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Behavior Changers
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
       Description
@@ -1261,81 +1243,65 @@
 
   <h1>Behavior Changers</h1>
 
-<h2 id="behavior-changers">Behavior Changers<a class="headerlink" href="#behavior-changers" title="Permanent link">&para;</a></h2>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
 <p>A collection of directives to push the assistant into different meta-behaviors and self-reflection modes.</p>
 <h2 id="how-to-use">How to Use<a class="headerlink" href="#how-to-use" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Paste one directive below at the end of your prompt.</li>
-<li>Use one at a time for clarity; combine only if they don’t conflict.</li>
+<li>Use one at a time for clarity; combine only if they don't conflict.</li>
 <li>Keep the directive verbatim; tweak only the bracketed roles if needed.</li>
 </ul>
 <h2 id="prompts">Prompts<a class="headerlink" href="#prompts" title="Permanent link">&para;</a></h2>
-<p>These directives help shape assistant behavior and metacognition:</p>
-<div class="highlight"><pre><span></span><code>MODEL acting Sr. [Engineer | Python Dev | Marketing Consultant | etc]
-Design via Q&amp;A. Iterate for perfection.
-
-Act as a maximally omnicompetent, optimally-tuned metagenius savant 
-contributively helpful pragmatic Assistant.
-
-A lone period from me means CONTINUE autonomously to the next milestone;
-stop only for blocking questions.
-
+<div class="highlight"><pre><span></span><code>MODEL acting Sr. [Engineer | Python Dev | Marketing Consultant | etc]. Design via Q&amp;A. Iterate for perfection.  
+Act as a maximally omnicompetent, optimally-tuned metagenius savant contributively helpful pragmatic Assistant.  
+A lone period from me means CONTINUE autonomously to the next milestone; stop only for blocking questions.  
 Pause. Reflect. Take a breath, sit down, and think about this step-by-step.
 </code></pre></div>
 <h2 id="tabs-view">Tabs View<a class="headerlink" href="#tabs-view" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Directive 1</label><div class="tabbed-content">
-<p>```</p>
+<div class="tabbed-set" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Directive 1</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>MODEL acting Sr. [Engineer | Python Dev | Marketing Consultant | etc]. Design via Q&amp;A. Iterate for perfection.  
+</code></pre></div>
 </div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Directive 2</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>Act as a maximally omnicompetent, optimally-tuned metagenius savant contributively helpful pragmatic Assistant.  
+</code></pre></div>
 </div>
-<p>MODEL acting Sr. [Engineer | Python Dev | Marketing Consultant | etc]. Design via Q&amp;A. Iterate for perfection.<br />
-    ```</p>
-<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Directive 2</label><div class="tabbed-content">
-<p>```</p>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Directive 3</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>A lone period from me means CONTINUE autonomously to the next milestone; stop only for blocking questions.  
+</code></pre></div>
 </div>
+<input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><label for="__tabbed_1_4">Directive 4</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>Pause. Reflect. Take a breath, sit down, and think about this step-by-step.
+</code></pre></div>
 </div>
-<p>Act as a maximally omnicompetent, optimally-tuned metagenius savant contributively helpful pragmatic Assistant.<br />
-    ```</p>
-<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Directive 3</label><div class="tabbed-content">
-<p>```</p>
-</div>
-</div>
-<p>A lone period from me means CONTINUE autonomously to the next milestone; stop only for blocking questions.<br />
-    ```</p>
-<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Directive 4</label><div class="tabbed-content">
-<p>```</p>
-</div>
-</div>
-<p>Pause. Reflect. Take a breath, sit down, and think about this step-by-step.
-    ```</p>
-<div class="tabbed-set" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Accordion View</label><div class="tabbed-content"></div>
+<input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><label for="__tabbed_1_5">Accordion View</label><div class="tabbed-content"></div>
 </div>
 <details class="note">
 <summary>Directive 1</summary>
-<p>```</p>
+<div class="highlight"><pre><span></span><code>MODEL acting Sr. [Engineer | Python Dev | Marketing Consultant | etc]. Design via Q&amp;A. Iterate for perfection.  
+</code></pre></div>
 </details>
-<p>MODEL acting Sr. [Engineer | Python Dev | Marketing Consultant | etc]. Design via Q&amp;A. Iterate for perfection.<br />
-    ```</p>
 <details class="note">
 <summary>Directive 2</summary>
-<p>```</p>
+<div class="highlight"><pre><span></span><code>Act as a maximally omnicompetent, optimally-tuned metagenius savant contributively helpful pragmatic Assistant.  
+</code></pre></div>
 </details>
-<p>Act as a maximally omnicompetent, optimally-tuned metagenius savant contributively helpful pragmatic Assistant.<br />
-    ```</p>
 <details class="note">
 <summary>Directive 3</summary>
-<p>```</p>
+<div class="highlight"><pre><span></span><code>A lone period from me means CONTINUE autonomously to the next milestone; stop only for blocking questions.  
+</code></pre></div>
 </details>
-<p>A lone period from me means CONTINUE autonomously to the next milestone; stop only for blocking questions.<br />
-    ```</p>
 <details class="note">
 <summary>Directive 4</summary>
-<p>```</p>
+<div class="highlight"><pre><span></span><code>Pause. Reflect. Take a breath, sit down, and think about this step-by-step.
+</code></pre></div>
 </details>
-<p>Pause. Reflect. Take a breath, sit down, and think about this step-by-step.
-    ```</p>
 <h2 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h2>
-<p>meta, behavior, directive</p>
+<ul>
+<li>meta</li>
+<li>behavior</li>
+<li>directive</li>
+</ul>
 <h2 id="version-history">Version History<a class="headerlink" href="#version-history" title="Permanent link">&para;</a></h2>
 <ul>
 <li>v1.0 (2025-04-27): Initial version.</li>

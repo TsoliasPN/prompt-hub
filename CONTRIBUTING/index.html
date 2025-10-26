@@ -1064,14 +1064,21 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributing
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#quick-checklist" class="md-nav__link">
@@ -1125,8 +1132,10 @@
 
 
 
-<h1 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h1>
-<p>Thanks for improving Prompt‑Hub! This guide lists the essentials for contributing content.</p>
+  <h1>Contributing</h1>
+
+<h2 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h2>
+<p>Thanks for improving Prompt-Hub! This guide lists the essentials for contributing content.</p>
 <hr />
 <h2 id="quick-checklist">Quick Checklist<a class="headerlink" href="#quick-checklist" title="Permanent link">&para;</a></h2>
 <ul>
@@ -1134,16 +1143,16 @@
 <li>Keep pages short, clear, and useful; avoid link dumps.</li>
 <li>Add YAML front matter at the top:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>---
-title: &quot;Page Title&quot;
-summary: &quot;One‑line why it matters&quot;
-type: reading-list|note|cheatsheet|roadmap
-level: beginner|intermediate|advanced
-topics: [llms, evals]
-updated: YYYY-MM-DD
-see_also:
-  - ./relative/link.md
----
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Page</span><span class="nv"> </span><span class="s">Title&quot;</span>
+<span class="nt">summary</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;One-line</span><span class="nv"> </span><span class="s">why</span><span class="nv"> </span><span class="s">it</span><span class="nv"> </span><span class="s">matters&quot;</span>
+<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">reading-list|note|cheatsheet|roadmap</span>
+<span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">beginner|intermediate|advanced</span>
+<span class="nt">topics</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">llms</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">evals</span><span class="p p-Indicator">]</span>
+<span class="nt">updated</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">YYYY-MM-DD</span>
+<span class="nt">see_also</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./relative/link.md</span>
+<span class="nn">---</span>
 </code></pre></div>
 <ul>
 <li>Use relative links (e.g., <code>reading-lists/llm-systems.md</code>).</li>
@@ -1152,14 +1161,26 @@ see_also:
 </ul>
 <hr />
 <h2 id="add-a-new-page">Add a New Page<a class="headerlink" href="#add-a-new-page" title="Permanent link">&para;</a></h2>
-<p>1) Create the file under <code>docs/…</code></p>
-<p>2) Add front matter (see above)</p>
-<p>3) (Optional) Add to sidebar nav: edit <code>mkdocs.yml</code> → <code>nav:</code></p>
-<p>4) (Optional) Update topics index:</p>
-<div class="highlight"><pre><span></span><code>powershell -ExecutionPolicy Bypass -File scripts/generate-topic-index.ps1
+<ol>
+<li>
+<p>Create the file under <code>docs/</code></p>
+</li>
+<li>
+<p>Add front matter (see above)</p>
+</li>
+<li>
+<p>(Optional) Add to sidebar nav: edit <code>mkdocs.yml</code> → <code>nav:</code></p>
+</li>
+<li>
+<p>(Optional) Update topics index:</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="n">powershell</span> <span class="n">-ExecutionPolicy</span> <span class="n">Bypass</span> <span class="o">-File</span> <span class="n">scripts</span><span class="p">/</span><span class="n">generate-topic-index</span><span class="p">.</span><span class="n">ps1</span>
 </code></pre></div>
-<p>5) Preview locally:</p>
-<div class="highlight"><pre><span></span><code>mkdocs serve
+<ol>
+<li>Preview locally:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>serve
 </code></pre></div>
 <hr />
 <h2 id="submitting-a-change">Submitting a Change<a class="headerlink" href="#submitting-a-change" title="Permanent link">&para;</a></h2>
@@ -1176,7 +1197,7 @@ see_also:
 <li>Prefer concise bullets and short paragraphs.</li>
 <li>Use meaningful section headers.</li>
 <li>Prefer en/em dashes (–/—) over hyphen spam where appropriate.</li>
-<li>Keep link text descriptive (not “here”).</li>
+<li>Keep link text descriptive (not "here").</li>
 </ul>
 
 
