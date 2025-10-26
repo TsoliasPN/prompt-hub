@@ -72,4 +72,3 @@ mkdocs serve
 - Use meaningful section headers.
 - Prefer en/em dashes (–/—) over hyphen spam where appropriate.
 - Keep link text descriptive (not "here").
-
