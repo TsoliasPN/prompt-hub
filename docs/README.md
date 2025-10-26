@@ -1,4 +1,4 @@
-# prompt-hub
+﻿# prompt-hub
 
 An MIT-licensed hub for high-quality LLM prompts and AI learning resources.
 
@@ -36,3 +36,8 @@ Learning content
 2. Start from a template in `templates/` and include YAML front matter (`title`, `summary`, `type`, `level`, `topics`, `updated`).
 3. Prefer concise commentary over raw link dumps.
 4. Update `learning/README.md` if you add a new major topic.
+
+## Contributing & Developing
+- See [Contributing](CONTRIBUTING.md) for how to add/update content.
+- See [Developing](DEVELOPING.md) for local dev, CI, and deploy details.
+
