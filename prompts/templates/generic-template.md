@@ -1,10 +1,17 @@
-# Category: <Short Title>
+---
+title: <Short Title>
+summary: <One-line summary for nav/search>
+---
+
+# <Short Title>
 
 ## Description
 [What this prompt is for and any context]
 
 ## Prompt
+```
 <Your prompt text here>
+```
 
 ## Tags
 #tag1 #tag2

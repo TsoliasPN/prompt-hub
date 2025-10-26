@@ -22,7 +22,7 @@
     
     
       
-        <title>Fact-checking News - prompt-hub</title>
+        <title>Fact-Check News - prompt-hub</title>
       
     
     
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Fact-checking News
+              Fact-Check News
             
           </span>
         </div>
@@ -1172,7 +1172,7 @@
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
 <p>Fact-check the provided text via a step-by-step, iterative process that lets the assistant ask one question at a time to ensure maximum reliability.</p>
 <h2 id="prompt">Prompt<a class="headerlink" href="#prompt" title="Permanent link">&para;</a></h2>
-<p>Here's some text inside brackets: [input the text here]. Task: You are tasked with fact-checking the provided text. Please follow the steps below and provide a detailed response. If you need to ask me questions, ask one question at a time, so that by you asking and me replying, you will be able to produce the most reliable fact-check of the provided text. Here are the steps you should follow:
+<div class="highlight"><pre><span></span><code>Here&#39;s some text inside brackets: [input the text here]. Task: You are tasked with fact-checking the provided text. Please follow the steps below and provide a detailed response. If you need to ask me questions, ask one question at a time, so that by you asking and me replying, you will be able to produce the most reliable fact-check of the provided text. Here are the steps you should follow:
 1. Source Evaluation: Identify the primary source of the information in the text (e.g., author, speaker, publication, or website). Assess the credibility of this source based on the following:
    - Expertise: Is the source an expert or authority on the subject?
    - Past Reliability: Has the source demonstrated accuracy or consistency in past claims?
@@ -1192,8 +1192,10 @@
 6. Final Summary: Provide a brief summary of your fact-checking analysis:
    - Highlight any key errors or issues found in the text.
    - Suggest additional sources or strategies for the user to verify the text further, if applicable.
-   - Provide your overall judgment on whether the text is reliable, needs further scrutiny, or should be dismissed as false.</p>
-<p>My original post has interesting comments on how to optimize this prompt, here.</p>
+   - Provide your overall judgment on whether the text is reliable, needs further scrutiny, or should be dismissed as false.
+
+My original post has interesting comments on how to optimize this prompt, here.
+</code></pre></div>
 <h2 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h2>
 <h1 id="news-fact-check-verification">news #fact-check #verification<a class="headerlink" href="#news-fact-check-verification" title="Permanent link">&para;</a></h1>
 <h2 id="version-history">Version History<a class="headerlink" href="#version-history" title="Permanent link">&para;</a></h2>
@@ -1207,6 +1209,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -1217,6 +1222,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -1248,7 +1255,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
