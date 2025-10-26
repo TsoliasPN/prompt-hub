@@ -13,28 +13,33 @@
   }
 
   function ensureButton() {
-    const container = document.querySelector('.md-header__options');
+    const container = document.querySelector('.md-header__options') || document.querySelector('.md-header__title');
     if (!container) return;
     if (document.getElementById('wrap-toggle')) return;
 
     const btn = document.createElement('button');
     btn.id = 'wrap-toggle';
     btn.type = 'button';
-    btn.className = 'md-header__button md-icon';
+    btn.className = 'md-header__button md-icon wrap-toggle-button';
     btn.title = 'Toggle code wrap';
     btn.setAttribute('aria-label', 'Toggle code wrap');
 
-    const span = document.createElement('span');
-    span.className = 'wrap-icon';
-    btn.appendChild(span);
+    const icon = document.createElement('span');
+    icon.className = 'wrap-icon';
+    btn.appendChild(icon);
+
+    const label = document.createElement('span');
+    label.className = 'wrap-label';
+    label.textContent = 'Wrap';
+    btn.appendChild(label);
 
     btn.addEventListener('click', function () {
       const newState = !document.documentElement.classList.contains('wrap-code-on');
       setWrap(newState);
     });
 
-    // Place before the color palette toggle for visibility
-    container.insertBefore(btn, container.firstChild);
+    // Place before the first option for visibility
+    container.insertBefore(btn, container.firstChild || null);
 
     // Initialize state
     setWrap(getWrap());
@@ -59,4 +64,3 @@
     });
   }
 })();
-
