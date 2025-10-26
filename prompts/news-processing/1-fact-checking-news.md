@@ -9,7 +9,7 @@ summary: A step-by-step prompt that iteratively verifies a text’s claims via q
 Fact-check the provided text via a step-by-step, iterative process that lets the assistant ask one question at a time to ensure maximum reliability.
 
 ## Prompt
-```
+```text
 Here's some text inside brackets: [input the text here]. Task: You are tasked with fact-checking the provided text. Please follow the steps below and provide a detailed response. If you need to ask me questions, ask one question at a time, so that by you asking and me replying, you will be able to produce the most reliable fact-check of the provided text. Here are the steps you should follow:
 1. Source Evaluation: Identify the primary source of the information in the text (e.g., author, speaker, publication, or website). Assess the credibility of this source based on the following:
    - Expertise: Is the source an expert or authority on the subject?
@@ -33,7 +33,7 @@ Here's some text inside brackets: [input the text here]. Task: You are tasked wi
    - Provide your overall judgment on whether the text is reliable, needs further scrutiny, or should be dismissed as false.
 
 My original post has interesting comments on how to optimize this prompt, here.
-```
+```text
 
 ## Tags
 #news #fact-check #verification

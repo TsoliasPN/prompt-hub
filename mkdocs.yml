@@ -30,6 +30,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
   - pymdownx.tabbed
+extra_css:
+  - styles/overrides.css
 
 nav:
   - Home: README.md
