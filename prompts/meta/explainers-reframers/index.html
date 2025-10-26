@@ -526,8 +526,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -560,14 +558,21 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#explainers-reframers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explainers / Reframers
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#description" class="md-nav__link">
@@ -618,6 +623,15 @@
   <a href="#tags" class="md-nav__link">
     <span class="md-ellipsis">
       Tags
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version History
     </span>
   </a>
   
@@ -1168,14 +1182,21 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#explainers-reframers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explainers / Reframers
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#description" class="md-nav__link">
@@ -1231,6 +1252,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#version-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version History
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1247,7 +1277,9 @@
 
 
 
-<h1 id="explainers-reframers">Explainers / Reframers<a class="headerlink" href="#explainers-reframers" title="Permanent link">&para;</a></h1>
+  <h1>Explainers / Reframers</h1>
+
+<h2 id="explainers-reframers">Explainers / Reframers<a class="headerlink" href="#explainers-reframers" title="Permanent link">&para;</a></h2>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
 <p>Prompts for reframing or compressing content in novel ways — tweets, metaphors, debates, etc.</p>
 <h2 id="how-to-use">How to Use<a class="headerlink" href="#how-to-use" title="Permanent link">&para;</a></h2>
@@ -1265,64 +1297,81 @@ Model this topic as a parliament of archetypes. Record a one-minute debate trans
 Be the glitch in the matrix. Diagnose reality feature:  
 </code></pre></div>
 <h2 id="tabs-view">Tabs View<a class="headerlink" href="#tabs-view" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set" data-tabs="1:6"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Causal Chains</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>Compress this topic. Speak only in causal chains. Topic:  
-</code></pre></div>
-</div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Tweet/Story/Emoji</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>Compress this topic to a ≤ 140-character tweet, a six-word story, and a single emoji. Topic:  
-</code></pre></div>
-</div>
-<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Metaphor Scales</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>Explain this concept at three metaphorical scales: “Quark”, “Earth”, “Galaxy”. One paragraph each. Topic:  
-</code></pre></div>
-</div>
-<input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><label for="__tabbed_1_4">Alien Explanation</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>Explain this human custom to a silicon-based species with zero culture overlap, in toddler-level syntax. Topic:  
-</code></pre></div>
-</div>
-<input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><label for="__tabbed_1_5">Parliament Debate</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>Model this topic as a parliament of archetypes. Record a one-minute debate transcript, then the final vote. Topic:  
-</code></pre></div>
-</div>
-<input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><label for="__tabbed_1_6">Glitch in Matrix</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>Be the glitch in the matrix. Diagnose reality feature:  
-</code></pre></div>
+<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Causal Chains</label><div class="tabbed-content">
+<p>```</p>
 </div>
 </div>
+<p>Compress this topic. Speak only in causal chains. Topic:<br />
+    ```</p>
+<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Tweet/Story/Emoji</label><div class="tabbed-content">
+<p>```</p>
+</div>
+</div>
+<p>Compress this topic to a ≤ 140-character tweet, a six-word story, and a single emoji. Topic:<br />
+    ```</p>
+<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Metaphor Scales</label><div class="tabbed-content">
+<p>```</p>
+</div>
+</div>
+<p>Explain this concept at three metaphorical scales: “Quark”, “Earth”, “Galaxy”. One paragraph each. Topic:<br />
+    ```</p>
+<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Alien Explanation</label><div class="tabbed-content">
+<p>```</p>
+</div>
+</div>
+<p>Explain this human custom to a silicon-based species with zero culture overlap, in toddler-level syntax. Topic:<br />
+    ```</p>
+<div class="tabbed-set" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Parliament Debate</label><div class="tabbed-content">
+<p>```</p>
+</div>
+</div>
+<p>Model this topic as a parliament of archetypes. Record a one-minute debate transcript, then the final vote. Topic:<br />
+    ```</p>
+<div class="tabbed-set" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">Glitch in Matrix</label><div class="tabbed-content">
+<p>```</p>
+</div>
+</div>
+<p>Be the glitch in the matrix. Diagnose reality feature:<br />
+    ```</p>
 <h2 id="accordion-view">Accordion View<a class="headerlink" href="#accordion-view" title="Permanent link">&para;</a></h2>
 <details class="note">
 <summary>Causal Chains</summary>
-<div class="highlight"><pre><span></span><code>Compress this topic. Speak only in causal chains. Topic:  
-</code></pre></div>
+<p>```</p>
 </details>
+<p>Compress this topic. Speak only in causal chains. Topic:<br />
+    ```</p>
 <details class="note">
 <summary>Tweet/Story/Emoji</summary>
-<div class="highlight"><pre><span></span><code>Compress this topic to a ≤ 140-character tweet, a six-word story, and a single emoji. Topic:  
-</code></pre></div>
+<p>```</p>
 </details>
+<p>Compress this topic to a ≤ 140-character tweet, a six-word story, and a single emoji. Topic:<br />
+    ```</p>
 <details class="note">
 <summary>Metaphor Scales</summary>
-<div class="highlight"><pre><span></span><code>Explain this concept at three metaphorical scales: “Quark”, “Earth”, “Galaxy”. One paragraph each. Topic:  
-</code></pre></div>
+<p>```</p>
 </details>
+<p>Explain this concept at three metaphorical scales: “Quark”, “Earth”, “Galaxy”. One paragraph each. Topic:<br />
+    ```</p>
 <details class="note">
 <summary>Alien Explanation</summary>
-<div class="highlight"><pre><span></span><code>Explain this human custom to a silicon-based species with zero culture overlap, in toddler-level syntax. Topic:  
-</code></pre></div>
+<p>```</p>
 </details>
+<p>Explain this human custom to a silicon-based species with zero culture overlap, in toddler-level syntax. Topic:<br />
+    ```</p>
 <details class="note">
 <summary>Parliament Debate</summary>
-<div class="highlight"><pre><span></span><code>Model this topic as a parliament of archetypes. Record a one-minute debate transcript, then the final vote. Topic:  
-</code></pre></div>
+<p>```</p>
 </details>
+<p>Model this topic as a parliament of archetypes. Record a one-minute debate transcript, then the final vote. Topic:<br />
+    ```</p>
 <details class="note">
 <summary>Glitch in Matrix</summary>
-<div class="highlight"><pre><span></span><code>Be the glitch in the matrix. Diagnose reality feature:  
-</code></pre></div>
+<p>```</p>
 </details>
+<p>Be the glitch in the matrix. Diagnose reality feature:<br />
+    ```</p>
 <h2 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h2>
-<h1 id="meta-explain-compress-reframe">meta #explain #compress #reframe<a class="headerlink" href="#meta-explain-compress-reframe" title="Permanent link">&para;</a></h1>
+<p>meta #explain #compress #reframe</p>
 <h2 id="version-history">Version History<a class="headerlink" href="#version-history" title="Permanent link">&para;</a></h2>
 <ul>
 <li>v1.0 (2025-04-27): Initial version.</li>
