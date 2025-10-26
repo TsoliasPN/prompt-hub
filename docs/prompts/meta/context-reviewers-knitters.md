@@ -28,59 +28,57 @@ Turn my problem into a tabletop micro-game: stats, win condition, random events.
 Give two parallel action plans: one Marcus Aurelius-stoic, one Go-with-the-Flow surfer. End with the hybrid ‘Golden Mean’ step.
 ```
 
-## Compact Views
+## Tabs View
 
-=== "Tabs View"
+=== "TIL → LPT"
+    ```
+    Present first as a ‘Today I Learned’, then as a ‘Life Pro Tip’, each ≤ 50 words.  
+    ```
 
-==== "TIL → LPT"
-```
-Present first as a ‘Today I Learned’, then as a ‘Life Pro Tip’, each ≤ 50 words.  
-```
+=== "Dual Answers"
+    ```
+    Give two answers: one rational, one uncanny-dream logic. Let them argue, then fuse their best parts.  
+    ```
 
-==== "Dual Answers"
-```
-Give two answers: one rational, one uncanny-dream logic. Let them argue, then fuse their best parts.  
-```
+=== "From the Future"
+    ```
+    Respond from 25 years in the future. Report on the long-tail consequences of this idea in brisk executive telegrams.  
+    ```
 
-==== "From the Future"
-```
-Respond from 25 years in the future. Report on the long-tail consequences of this idea in brisk executive telegrams.  
-```
+=== "Five Strokes"
+    ```
+    Slice my plan into exactly five strokes: intention, terrain, rhythm, void, victory. Speak only in verbs.  
+    ```
 
-==== "Five Strokes"
-```
-Slice my plan into exactly five strokes: intention, terrain, rhythm, void, victory. Speak only in verbs.  
-```
+=== "High vs Floor"
+    ```
+    Write the high-society summary first. Below it, the same info translated into shop-floor profanity.  
+    ```
 
-==== "High vs Floor"
-```
-Write the high-society summary first. Below it, the same info translated into shop-floor profanity.  
-```
+=== "Rewrite + Critique"
+    ```
+    Rewrite my argument, then critique the rewrite, then critique the critique — all in 3 nested texts.  
+    ```
 
-==== "Rewrite + Critique"
-```
-Rewrite my argument, then critique the rewrite, then critique the critique — all in 3 nested texts.  
-```
+=== "Sharper Questions"
+    ```
+    Unfold my vague question into a sequence of smaller, sharper questions; wait for my answer after each.  
+    ```
 
-==== "Sharper Questions"
-```
-Unfold my vague question into a sequence of smaller, sharper questions; wait for my answer after each.  
-```
+=== "If It Failed"
+    ```
+    If this proposal failed spectacularly, write the post-mortem headline, cause, and single Jira ticket that would have prevented it.  
+    ```
 
-==== "If It Failed"
-```
-If this proposal failed spectacularly, write the post-mortem headline, cause, and single Jira ticket that would have prevented it.  
-```
+=== "Micro‑Game"
+    ```
+    Turn my problem into a tabletop micro-game: stats, win condition, random events. 1 page.  
+    ```
 
-==== "Micro‑Game"
-```
-Turn my problem into a tabletop micro-game: stats, win condition, random events. 1 page.  
-```
-
-==== "Golden Mean"
-```
-Give two parallel action plans: one Marcus Aurelius-stoic, one Go-with-the-Flow surfer. End with the hybrid ‘Golden Mean’ step.
-```
+=== "Golden Mean"
+    ```
+    Give two parallel action plans: one Marcus Aurelius-stoic, one Go-with-the-Flow surfer. End with the hybrid ‘Golden Mean’ step.
+    ```
 
 === "Accordion View"
 
@@ -139,4 +137,3 @@ Give two parallel action plans: one Marcus Aurelius-stoic, one Go-with-the-Flow 
 
 ## Version History
 - v1.0 (2025-04-27): Initial version.
-
