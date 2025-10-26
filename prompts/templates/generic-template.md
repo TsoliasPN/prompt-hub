@@ -9,7 +9,7 @@ summary: <One-line summary for nav/search>
 [What this prompt is for and any context]
 
 ## Prompt
-```text
+```
 <Your prompt text here>
 ```
 

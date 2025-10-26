@@ -9,7 +9,7 @@ summary: Analyze adequacy of interventions using demographics, expert studies, a
 Evaluate the adequacy of described government interventions by examining demographics, expert studies, and historical data.
 
 ## Prompt
-```text
+```
 The following text inside brackets discusses various government interventions: [input a text here describing the government intervention(s) whose adequacy you want to evaluate]. Please analyze the effectiveness of these interventions by evaluating the following elements:
 1. Demographic Statistics: How do the government’s actions align with the statistical trends related to the issue? Are the interventions targeting the correct areas based on available data (e.g., birth rates, poverty levels, etc.)?
 2. Expert Studies: How do the expert opinions or studies mentioned in the text reflect on the adequacy of the interventions? Are experts suggesting that these efforts are sufficient, or do they propose alternative solutions?
@@ -17,7 +17,7 @@ The following text inside brackets discusses various government interventions: [
 
 Using these knowledge-generating principles, please provide a comprehensive evaluation of the government’s actions in relation to the data, expert analysis, and history.
 
-```text
+```
 
 ## Tags
 #news #evaluation #policy-analysis
