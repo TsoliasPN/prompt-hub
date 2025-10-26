@@ -9,7 +9,11 @@
   }
 
   function getWrap() {
-    try { return localStorage.getItem(STORAGE_KEY) === '1'; } catch (e) { return false; }
+    try {
+      const v = localStorage.getItem(STORAGE_KEY);
+      // Default to ON when not set
+      return v === null ? true : v === '1';
+    } catch (e) { return true; }
   }
 
   function ensureButton() {
