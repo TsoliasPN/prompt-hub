@@ -19,3 +19,23 @@
   width: 1.05rem;
   height: 1.05rem;
 }
+
+/* Code wrap: opt-in via toggle, applied globally when enabled */
+:root.wrap-code-on .md-typeset pre code {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Header wrap toggle button */
+#wrap-toggle { display: inline-flex; align-items: center; justify-content: center; }
+#wrap-toggle .wrap-icon::before {
+  content: '↩︎'; /* wrap icon */
+  font-size: 1.1rem;
+  line-height: 1;
+}
+#wrap-toggle[data-state="on"] .wrap-icon::before {
+  content: '↪︎';
+}
+
+/* Tooltip via title attr handled by browser; increase spacing around button */
+.md-header__options #wrap-toggle { margin-right: .25rem; }

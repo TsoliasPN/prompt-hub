@@ -24,7 +24,7 @@ Copy-Item -Path (Join-Path $repoRoot 'README.md') -Destination (Join-Path $docsD
 Copy-Item -Path (Join-Path $repoRoot 'CHANGELOG.md') -Destination (Join-Path $docsDir 'CHANGELOG.md') -Force
 
 # Copy content directories used by nav
-$includeDirs = @('learning', 'prompts', 'styles')
+$includeDirs = @('learning','prompts','styles','assets')
 foreach ($dir in $includeDirs) {
     $src = Join-Path $repoRoot $dir
     if (Test-Path $src) {
@@ -39,3 +39,4 @@ foreach ($dir in $includeDirs) {
 }
 
 Write-Host "Prepared docs in: $docsDir"
+

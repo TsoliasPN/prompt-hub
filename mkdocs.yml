@@ -32,6 +32,8 @@ markdown_extensions:
   - pymdownx.tabbed
 extra_css:
   - styles/overrides.css
+extra_javascript:
+  - assets/wrap-toggle.js
 
 nav:
   - Home: README.md
