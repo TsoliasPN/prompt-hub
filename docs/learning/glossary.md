@@ -15,4 +15,3 @@ updated: 2025-10-26
 - Top-p (nucleus): Samples from top cumulative probability mass.
 - RAG: Retrieval-Augmented Generation; uses external docs at inference.
 - Hallucination: Confident but unsupported or incorrect output.
-

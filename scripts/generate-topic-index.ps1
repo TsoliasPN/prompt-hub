@@ -1,6 +1,7 @@
 param(
     [string]$Root = (Join-Path (Get-Location).Path 'docs'),
     [string[]]$ScanDirs = @('learning','prompts'),
+    # Path to output file relative to $Root
     [string]$OutFile = 'learning/topics.md'
 )
 
@@ -59,6 +60,7 @@ function Get-RelativePathUnix {
 
 # Collect markdown files
 $rootPath = Resolve-Path $Root
+${outDir} = Join-Path $rootPath (Split-Path -Parent $OutFile)
 $files = @()
 foreach ($d in $ScanDirs) {
     $p = Join-Path $rootPath $d
@@ -76,7 +78,8 @@ foreach ($f in $files) {
     $summary = if ($fm.ContainsKey('summary')) { $fm['summary'] } else { '' }
     $type = if ($fm.ContainsKey('type')) { $fm['type'] } else { '' }
     $level = if ($fm.ContainsKey('level')) { $fm['level'] } else { '' }
-    $rel = Get-RelativePathUnix -FullPath $f.FullName -BasePath $rootPath
+    # Build links relative to the directory of the output file to avoid duplicated path segments
+    $rel = Get-RelativePathUnix -FullPath $f.FullName -BasePath ${outDir}
 
     foreach ($t in $fm['topics']) {
         if (-not $topicsMap.ContainsKey($t)) { $topicsMap[$t] = @() }
