@@ -1,0 +1,41 @@
+site_name: prompt-hub
+site_description: High-quality LLM prompts and AI learning resources.
+# Set docs to repo root so existing Markdown is used
+docs_dir: .
+
+theme:
+  name: mkdocs
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - admonition
+
+nav:
+  - Home: README.md
+  - Prompts:
+      - Prompt Booster: prompts/prompt-booster.md
+      - Interview Preparation: prompts/interview-preparation/README.md
+      - News Processing:
+          - Fact-checking News: prompts/news-processing/1-fact-checking-news.md
+          - Evaluate Interventions: prompts/news-processing/2-evaluate-interventions.md
+          - Act on News: prompts/news-processing/3-act-on-news.md
+      - Meta:
+          - Behavior Changers: prompts/meta/behavior-changers.md
+          - Explainers / Reframers: prompts/meta/explainers-reframers.md
+          - Context Reviewers / Knitters: prompts/meta/context-reviewers-knitters.md
+      - Templates: prompts/templates/generic-template.md
+  - Learning:
+      - Overview: learning/README.md
+      - Topics Index: learning/topics.md
+      - Reading Lists:
+          - LLM Systems: learning/reading-lists/llm-systems.md`n          - AI Creators & Channels: learning/reading-lists/ai-creators-and-channels.md
+      - Notes:
+          - Transformer Intuition: learning/notes/transformers-intuition.md
+      - Cheatsheets:
+          - Retrieval + RAG Evaluation: learning/cheatsheets/retrieval-evals-cheatsheet.md
+      - Roadmaps:
+          - LLM Roadmap: learning/roadmaps/llm-roadmap.md
+      - Glossary: learning/glossary.md
+  - Changelog: CHANGELOG.md
