@@ -3,7 +3,7 @@ title: Contributing
 summary: What contributors need to know to add or update content.
 ---
 
-# Contributing
+## Contributing
 
 Thanks for improving Prompt-Hub! This guide lists the essentials for contributing content.
 
@@ -36,19 +36,19 @@ see_also:
 
 ## Add a New Page
 
-1) Create the file under `docs/`
+1. Create the file under `docs/`
 
-2) Add front matter (see above)
+1. Add front matter (see above)
 
-3) (Optional) Add to sidebar nav: edit `mkdocs.yml` → `nav:`
+1. (Optional) Add to sidebar nav: edit `mkdocs.yml` → `nav:`
 
-4) (Optional) Update topics index:
+1. (Optional) Update topics index:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts/generate-topic-index.ps1
 ```
 
-5) Preview locally:
+1. Preview locally:
 
 ```bash
 mkdocs serve

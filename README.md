@@ -1,4 +1,4 @@
-# prompt-hub
+﻿# prompt-hub
 
 An MIT-licensed hub for high-quality LLM prompts and AI learning resources.
 
@@ -22,7 +22,7 @@ An MIT-licensed hub for high-quality LLM prompts and AI learning resources.
 
 ## Docs site
 
-- Preview locally: `pip install mkdocs mkdocs-material` then `mkdocs serve` (opens http://127.0.0.1:8000)
+- Preview locally: `pip install mkdocs mkdocs-material` then `mkdocs serve` (opens <http://127.0.0.1:8000>)
 - Build static site: `mkdocs build` (outputs to `site/`)
 - Optional deploy to GitHub Pages: `mkdocs gh-deploy`
 - Config file: `mkdocs.yml` (sources are under `docs/`)
@@ -30,13 +30,14 @@ An MIT-licensed hub for high-quality LLM prompts and AI learning resources.
 ## Contributing
 
 Prompts
+
 1. Add or update a `.md` in `prompts/<category>/`.
 2. Keep titles clear and include tags.
 3. Update `CHANGELOG.md`.
 
 Learning content
+
 1. Choose a type: `learning/(reading-lists|notes|cheatsheets|roadmaps|papers|courses)`.
 2. Start from a template in `templates/` and include YAML front matter (`title`, `summary`, `type`, `level`, `topics`, `updated`).
 3. Prefer concise commentary over raw link dumps.
 4. Update `learning/README.md` if you add a new major topic.
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "LLM Systems: Curated Overview"
 summary: "High-signal resources for understanding and building LLM systems."
 type: reading-list
@@ -41,4 +41,3 @@ Quality bar: this list stays short and opinionated. Each link includes a why-it-
 
 - Start with evals — Define success metrics before scaling complexity.
 - Observability — Capture prompts, versions, inputs, outputs, and model metadata for reproducibility.
-
