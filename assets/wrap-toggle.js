@@ -9,32 +9,50 @@
   }
 
   function getWrap() {
-    try { return localStorage.getItem(STORAGE_KEY) === '1'; } catch (e) { return false; }
+    try {
+      const v = localStorage.getItem(STORAGE_KEY);
+      // Default to ON when not set
+      return v === null ? true : v === '1';
+    } catch (e) { return true; }
   }
 
   function ensureButton() {
-    const container = document.querySelector('.md-header__options');
+    const palette = document.querySelector('form.md-header__option[data-md-component="palette"]');
+    const search = document.querySelector('div.md-search');
+    const nav = document.querySelector('header.md-header nav.md-header__inner');
+    const container = (search && search.parentElement) || (palette && palette.parentElement) || nav;
     if (!container) return;
     if (document.getElementById('wrap-toggle')) return;
 
     const btn = document.createElement('button');
     btn.id = 'wrap-toggle';
     btn.type = 'button';
-    btn.className = 'md-header__button md-icon';
+    btn.className = 'md-header__button md-icon wrap-toggle-button';
     btn.title = 'Toggle code wrap';
     btn.setAttribute('aria-label', 'Toggle code wrap');
 
-    const span = document.createElement('span');
-    span.className = 'wrap-icon';
-    btn.appendChild(span);
+    const icon = document.createElement('span');
+    icon.className = 'wrap-icon';
+    btn.appendChild(icon);
+
+    const label = document.createElement('span');
+    label.className = 'wrap-label';
+    label.textContent = 'Wrap';
+    btn.appendChild(label);
 
     btn.addEventListener('click', function () {
       const newState = !document.documentElement.classList.contains('wrap-code-on');
       setWrap(newState);
     });
 
-    // Place before the color palette toggle for visibility
-    container.insertBefore(btn, container.firstChild);
+    // Prefer placing immediately before the search bar to keep site title area intact
+    if (search && search.parentElement === container) {
+      container.insertBefore(btn, search);
+    } else if (palette && palette.parentElement === container) {
+      container.insertBefore(btn, palette.nextSibling);
+    } else {
+      container.appendChild(btn);
+    }
 
     // Initialize state
     setWrap(getWrap());
@@ -59,4 +77,3 @@
     });
   }
 })();
-

@@ -23,9 +23,9 @@ Get to 95% confidence before acting by asking concrete, answerable questions tha
 
 Example
 
-```text
+```
 Before answering, ask up to 3 targeted questions to remove ambiguity that could change the output. Prioritize crisp, answerable questions.
-```text
+```
 
 ### 2) Expert Lens
 Adopt a top 0.1% practitioner’s viewpoint to surface standards, pitfalls, and trade‑offs.
@@ -37,9 +37,9 @@ Adopt a top 0.1% practitioner’s viewpoint to surface standards, pitfalls, and 
 
 Example
 
-```text
+```
 Add a brief "Top 0.1% Expert Take": cite key standards, common pitfalls, and the best-practice approach for this context.
-```text
+```
 
 ### 3) Reframe
 Offer 2–3 alternative framings that could change the approach, success criteria, or evaluation.
