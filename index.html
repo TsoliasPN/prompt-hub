@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="High-quality LLM prompts and AI learning resources.">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>prompt-hub</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">prompt-hub</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem active">
+                                <a href="." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Prompts <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="prompts/prompt-booster/" class="dropdown-item">Prompt Booster</a>
+</li>
+                                    
+<li>
+    <a href="prompts/interview-preparation/" class="dropdown-item">Interview Preparation</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">News Processing</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="prompts/news-processing/1-fact-checking-news/" class="dropdown-item">Fact-checking News</a>
+</li>
+            
+<li>
+    <a href="prompts/news-processing/2-evaluate-interventions/" class="dropdown-item">Evaluate Interventions</a>
+</li>
+            
+<li>
+    <a href="prompts/news-processing/3-act-on-news/" class="dropdown-item">Act on News</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Meta</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="prompts/meta/behavior-changers/" class="dropdown-item">Behavior Changers</a>
+</li>
+            
+<li>
+    <a href="prompts/meta/explainers-reframers/" class="dropdown-item">Explainers / Reframers</a>
+</li>
+            
+<li>
+    <a href="prompts/meta/context-reviewers-knitters/" class="dropdown-item">Context Reviewers / Knitters</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="prompts/templates/generic-template/" class="dropdown-item">Templates</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Learning <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="learning/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="learning/topics/" class="dropdown-item">Topics Index</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Reading Lists</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="learning/reading-lists/llm-systems/" class="dropdown-item">LLM Systems</a>
+</li>
+            
+<li>
+    <a href="learning/reading-lists/ai-creators-and-channels/" class="dropdown-item">AI Creators & Channels</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Notes</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="learning/notes/transformers-intuition/" class="dropdown-item">Transformer Intuition</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cheatsheets</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="learning/cheatsheets/retrieval-evals-cheatsheet/" class="dropdown-item">Retrieval + RAG Evaluation</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Roadmaps</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="learning/roadmaps/llm-roadmap/" class="dropdown-item">LLM Roadmap</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="learning/glossary/" class="dropdown-item">Glossary</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="CHANGELOG/" class="nav-link">Changelog</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="prompts/prompt-booster/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#prompt-hub" class="nav-link">prompt-hub</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#structure" class="nav-link">Structure</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#getting-started" class="nav-link">Getting started</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#index-generation" class="nav-link">Index generation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#docs-site" class="nav-link">Docs site</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#contributing" class="nav-link">Contributing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="prompt-hub">prompt-hub<a class="headerlink" href="#prompt-hub" title="Permanent link">&para;</a></h1>
+<p>An MIT-licensed hub for high-quality LLM prompts and AI learning resources.</p>
+<h2 id="structure">Structure<a class="headerlink" href="#structure" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>prompts/</code> - live prompts by category</li>
+<li><code>learning/</code> - reading lists, notes, cheatsheets, roadmaps, glossary</li>
+<li><code>templates/</code> - shared templates for learning content</li>
+<li><code>CHANGELOG.md</code> - history of changes</li>
+<li><code>LICENSE</code> - MIT license</li>
+</ul>
+<h2 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Prompts: browse <code>prompts/</code> (e.g., <code>prompts/prompt-booster.md</code>).</li>
+<li>Learning: start at <code>learning/README.md</code> - jump to the <a href="learning/reading-lists/llm-systems/">LLM Systems reading list</a> or the <a href="learning/roadmaps/llm-roadmap/">LLM Roadmap</a>.</li>
+</ul>
+<h2 id="index-generation">Index generation<a class="headerlink" href="#index-generation" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Build topic index: <code>powershell -ExecutionPolicy Bypass -File scripts/generate-topic-index.ps1</code></li>
+<li>Output file: <code>learning/topics.md</code></li>
+</ul>
+<h2 id="docs-site">Docs site<a class="headerlink" href="#docs-site" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Preview locally: <code>pip install mkdocs</code> then <code>mkdocs serve</code> (opens http://127.0.0.1:8000)</li>
+<li>Build static site: <code>mkdocs build</code> (outputs to <code>site/</code>)</li>
+<li>Optional deploy to GitHub Pages: <code>mkdocs gh-deploy</code></li>
+<li>Config file: <code>mkdocs.yml:1</code> (nav uses existing Markdown; no file moves needed)</li>
+</ul>
+<h2 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h2>
+<p>Prompts
+1. Add or update a <code>.md</code> in <code>prompts/&lt;category&gt;/</code>.
+2. Keep titles clear and include tags.
+3. Update <code>CHANGELOG.md</code>.</p>
+<p>Learning content
+1. Choose a type: <code>learning/(reading-lists|notes|cheatsheets|roadmaps|papers|courses)</code>.
+2. Start from a template in <code>templates/</code> and include YAML front matter (<code>title</code>, <code>summary</code>, <code>type</code>, <code>level</code>, <code>topics</code>, <code>updated</code>).
+3. Prefer concise commentary over raw link dumps.
+4. Update <code>learning/README.md</code> if you add a new major topic.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.5.3
+Build Date UTC : 2025-10-26 12:34:21.232668+00:00
+-->

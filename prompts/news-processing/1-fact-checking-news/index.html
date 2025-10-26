@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Fact-checking News - prompt-hub</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">prompt-hub</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Prompts <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../prompt-booster/" class="dropdown-item">Prompt Booster</a>
+</li>
+                                    
+<li>
+    <a href="../../interview-preparation/" class="dropdown-item">Interview Preparation</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">News Processing</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="./" class="dropdown-item active">Fact-checking News</a>
+</li>
+            
+<li>
+    <a href="../2-evaluate-interventions/" class="dropdown-item">Evaluate Interventions</a>
+</li>
+            
+<li>
+    <a href="../3-act-on-news/" class="dropdown-item">Act on News</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Meta</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../meta/behavior-changers/" class="dropdown-item">Behavior Changers</a>
+</li>
+            
+<li>
+    <a href="../../meta/explainers-reframers/" class="dropdown-item">Explainers / Reframers</a>
+</li>
+            
+<li>
+    <a href="../../meta/context-reviewers-knitters/" class="dropdown-item">Context Reviewers / Knitters</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../templates/generic-template/" class="dropdown-item">Templates</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Learning <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../learning/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../learning/topics/" class="dropdown-item">Topics Index</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Reading Lists</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../learning/reading-lists/llm-systems/" class="dropdown-item">LLM Systems</a>
+</li>
+            
+<li>
+    <a href="../../../learning/reading-lists/ai-creators-and-channels/" class="dropdown-item">AI Creators & Channels</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Notes</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../learning/notes/transformers-intuition/" class="dropdown-item">Transformer Intuition</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cheatsheets</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../learning/cheatsheets/retrieval-evals-cheatsheet/" class="dropdown-item">Retrieval + RAG Evaluation</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Roadmaps</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../learning/roadmaps/llm-roadmap/" class="dropdown-item">LLM Roadmap</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../learning/glossary/" class="dropdown-item">Glossary</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../CHANGELOG/" class="nav-link">Changelog</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../interview-preparation/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../2-evaluate-interventions/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#prompt-category-or-prompt-name-fact-check-news" class="nav-link">Prompt Category or Prompt Name: Fact-Check News</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#description" class="nav-link">Description</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#prompt" class="nav-link">Prompt</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tags" class="nav-link">Tags</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#news-fact-check-verification" class="nav-link">news #fact-check #verification</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#version-history" class="nav-link">Version History</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="prompt-category-or-prompt-name-fact-check-news">Prompt Category or Prompt Name: Fact-Check News<a class="headerlink" href="#prompt-category-or-prompt-name-fact-check-news" title="Permanent link">&para;</a></h1>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
+<p>Fact-check the provided text via a step-by-step, iterative process that lets the assistant ask one question at a time to ensure maximum reliability.</p>
+<h2 id="prompt">Prompt<a class="headerlink" href="#prompt" title="Permanent link">&para;</a></h2>
+<p>Here's some text inside brackets: [input the text here]. Task: You are tasked with fact-checking the provided text. Please follow the steps below and provide a detailed response. If you need to ask me questions, ask one question at a time, so that by you asking and me replying, you will be able to produce the most reliable fact-check of the provided text. Here are the steps you should follow:
+1. Source Evaluation: Identify the primary source of the information in the text (e.g., author, speaker, publication, or website). Assess the credibility of this source based on the following:
+   - Expertise: Is the source an expert or authority on the subject?
+   - Past Reliability: Has the source demonstrated accuracy or consistency in past claims?
+   - Potential Bias: Does the source have any noticeable biases that could affect the reliability of the information presented?
+2. Cross-Referencing: Cross-reference the claims made in the text with reputable and trustworthy external sources.
+   - Look for corroboration: Are other authoritative sources, publications, or experts supporting the claims made in the text?
+   - Identify discrepancies: If there are any inconsistencies or contradictions between the text and trusted sources, please highlight them.
+3. Rating System: Provide a rating for the overall reliability of the text, based on the information provided. Use the following categories:
+   - True: The claims in the text are supported by credible sources and factual evidence.
+   - Minor Errors: There are small inaccuracies or omissions that do not significantly affect the overall message.
+   - Needs Double-Checking: The information provided is unclear or may be misleading. Further verification is needed for key claims.
+   - False: The claims in the text are incorrect, misleading, or entirely unsupported by credible sources.
+4. Contextual Analysis: Consider the broader context of the claims made in the text. Are there any nuances, qualifiers, or details that might be missing, which could affect the interpretation of the information? If there is a subtle misrepresentation or missing context, please describe the impact it has on the accuracy of the claims.
+5. Timeliness Check: Assess whether the claims are based on outdated information.
+   - Is the information current?: Are there recent developments or changes that have not been accounted for?
+   - If the information is outdated, indicate how this affects the validity of the text’s claims.
+6. Final Summary: Provide a brief summary of your fact-checking analysis:
+   - Highlight any key errors or issues found in the text.
+   - Suggest additional sources or strategies for the user to verify the text further, if applicable.
+   - Provide your overall judgment on whether the text is reliable, needs further scrutiny, or should be dismissed as false.</p>
+<p>My original post has interesting comments on how to optimize this prompt, here.</p>
+<h2 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h2>
+<h1 id="news-fact-check-verification">news #fact-check #verification<a class="headerlink" href="#news-fact-check-verification" title="Permanent link">&para;</a></h1>
+<h2 id="version-history">Version History<a class="headerlink" href="#version-history" title="Permanent link">&para;</a></h2>
+<ul>
+<li>v1.0 (2025-04-28): Initial version.</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
