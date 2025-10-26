@@ -14,8 +14,9 @@
 
   function ensureButton() {
     const palette = document.querySelector('form.md-header__option[data-md-component="palette"]');
+    const search = document.querySelector('div.md-search');
     const nav = document.querySelector('header.md-header nav.md-header__inner');
-    const container = palette && palette.parentElement ? palette.parentElement : nav;
+    const container = (search && search.parentElement) || (palette && palette.parentElement) || nav;
     if (!container) return;
     if (document.getElementById('wrap-toggle')) return;
 
@@ -40,9 +41,11 @@
       setWrap(newState);
     });
 
-    // Prefer placing just before the palette toggle if present
-    if (palette && palette.parentElement === container) {
-      container.insertBefore(btn, palette);
+    // Prefer placing immediately before the search bar to keep site title area intact
+    if (search && search.parentElement === container) {
+      container.insertBefore(btn, search);
+    } else if (palette && palette.parentElement === container) {
+      container.insertBefore(btn, palette.nextSibling);
     } else {
       container.appendChild(btn);
     }
