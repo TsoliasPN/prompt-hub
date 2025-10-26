@@ -3,12 +3,14 @@ title: Act on News
 summary: Turn a news story into a personalized, actionable checklist via iterative Q&A.
 ---
 
-# Prompt Category or Name: Act on News
+## Prompt Category or Name: Act on News
 
 ## Description
+
 Turn a news story into a personalized, actionable checklist - iteratively refined via Q&A.
 
 ## Prompt
+
 ```text
 Here's a text: "[paste the news story here]". Based on this text, create one simple, actionable checklist; the goal is to create a checklist that is easy to follow and provides actionable steps. Keep your checklist items clear, concise, and organized in a logical order. Use bullet points to make the checklist easy to read.
 
@@ -24,8 +26,11 @@ Use that checklist to help me apply it to my personal situation. If you need to 
 ```
 
 ## Tags
-#news #action-plan #checklist
+
+- news
+- action-plan
+- checklist
 
 ## Version History
-- v1.0 (2025-04-28): Initial version.
 
+- v1.0 (2025-04-28): Initial version.
