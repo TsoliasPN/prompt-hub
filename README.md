@@ -4,25 +4,25 @@ An MIT-licensed hub for high-quality LLM prompts and AI learning resources.
 
 ## Structure
 
-- `prompts/` - live prompts by category
-- `learning/` - reading lists, notes, cheatsheets, roadmaps, glossary
+- `docs/prompts/` - live prompts by category
+- `docs/learning/` - reading lists, notes, cheatsheets, roadmaps, glossary
 - `templates/` - shared templates for learning content
 - `CHANGELOG.md` - history of changes
 - `LICENSE` - MIT license
 
 ## Getting started
-- Prompts: browse `prompts/` (e.g., `prompts/prompt-booster.md`).
-- Learning: start at `learning/README.md` - jump to the [LLM Systems reading list](learning/reading-lists/llm-systems.md) or the [LLM Roadmap](learning/roadmaps/llm-roadmap.md).
+- Prompts: browse `docs/prompts/` (e.g., `docs/prompts/prompt-booster.md`).
+- Learning: start at `docs/learning/README.md` — jump to the [LLM Systems reading list](docs/learning/reading-lists/llm-systems.md) or the [LLM Roadmap](docs/learning/roadmaps/llm-roadmap.md).
 
 ## Index generation
 - Build topic index: `powershell -ExecutionPolicy Bypass -File scripts/generate-topic-index.ps1`
-- Output file: `learning/topics.md`
+- Output file: `docs/learning/topics.md`
 
 ## Docs site
-- Preview locally: `pip install mkdocs` then `mkdocs serve` (opens http://127.0.0.1:8000)
+- Preview locally: `pip install mkdocs mkdocs-material` then `mkdocs serve` (opens http://127.0.0.1:8000)
 - Build static site: `mkdocs build` (outputs to `site/`)
 - Optional deploy to GitHub Pages: `mkdocs gh-deploy`
-- Config file: `mkdocs.yml:1` (nav uses existing Markdown; no file moves needed)
+- Config file: `mkdocs.yml` (sources are under `docs/`)
 
 ## Contributing
 

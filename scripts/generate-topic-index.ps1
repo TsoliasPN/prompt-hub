@@ -1,5 +1,5 @@
 param(
-    [string]$Root = (Get-Location).Path,
+    [string]$Root = (Join-Path (Get-Location).Path 'docs'),
     [string[]]$ScanDirs = @('learning','prompts'),
     [string]$OutFile = 'learning/topics.md'
 )

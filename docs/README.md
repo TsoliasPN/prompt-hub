@@ -19,10 +19,10 @@ An MIT-licensed hub for high-quality LLM prompts and AI learning resources.
 - Output file: `learning/topics.md`
 
 ## Docs site
-- Preview locally: `pip install mkdocs` then `mkdocs serve` (opens http://127.0.0.1:8000)
+- Preview locally: `pip install mkdocs mkdocs-material` then `mkdocs serve` (opens http://127.0.0.1:8000)
 - Build static site: `mkdocs build` (outputs to `site/`)
 - Optional deploy to GitHub Pages: `mkdocs gh-deploy`
-- Config file: `mkdocs.yml:1` (nav uses existing Markdown; no file moves needed)
+- Config file: `mkdocs.yml` (sources live under `docs/`)
 
 ## Contributing
 
