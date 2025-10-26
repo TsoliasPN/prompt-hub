@@ -13,7 +13,9 @@
   }
 
   function ensureButton() {
-    const container = document.querySelector('.md-header__options') || document.querySelector('.md-header__title');
+    const palette = document.querySelector('form.md-header__option[data-md-component="palette"]');
+    const nav = document.querySelector('header.md-header nav.md-header__inner');
+    const container = palette && palette.parentElement ? palette.parentElement : nav;
     if (!container) return;
     if (document.getElementById('wrap-toggle')) return;
 
@@ -38,8 +40,12 @@
       setWrap(newState);
     });
 
-    // Place before the first option for visibility
-    container.insertBefore(btn, container.firstChild || null);
+    // Prefer placing just before the palette toggle if present
+    if (palette && palette.parentElement === container) {
+      container.insertBefore(btn, palette);
+    } else {
+      container.appendChild(btn);
+    }
 
     // Initialize state
     setWrap(getWrap());
