@@ -20,7 +20,7 @@ Quality bar: this list stays short and opinionated. Each link includes a why-it-
 ## Prompting + Patterns
 
 - OpenAI Cookbook — Practical prompting patterns, evaluation ideas, and tooling. <https://github.com/openai/openai-cookbook>
-- Prompt engineering patterns (assorted guides) — Use chain-of-thought, self-consistency, and structured outputs judiciously; measure impact, don’t assume.
+- Prompt engineering patterns (assorted guides) — Use chain-of-thought, self-consistency, and structured outputs judiciously; measure impact, don't assume.
 
 ## RAG (Retrieval-Augmented Generation)
 
@@ -41,3 +41,4 @@ Quality bar: this list stays short and opinionated. Each link includes a why-it-
 
 - Start with evals — Define success metrics before scaling complexity.
 - Observability — Capture prompts, versions, inputs, outputs, and model metadata for reproducibility.
+

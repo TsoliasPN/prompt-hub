@@ -1,6 +1,6 @@
 ---
 title: Fact-Check News
-summary: A step-by-step prompt that iteratively verifies a text’s claims via questions, cross-checks, and context.
+summary: A step-by-step prompt that iteratively verifies a text's claims via questions, cross-checks, and context.
 ---
 
 ## Prompt Category or Prompt Name: Fact-Check News
@@ -28,7 +28,7 @@ Here's some text inside brackets: [input the text here]. Task: You are tasked wi
 4. Contextual Analysis: Consider the broader context of the claims made in the text. Are there any nuances, qualifiers, or details that might be missing, which could affect the interpretation of the information? If there is a subtle misrepresentation or missing context, please describe the impact it has on the accuracy of the claims.
 5. Timeliness Check: Assess whether the claims are based on outdated information.
    - Is the information current?: Are there recent developments or changes that have not been accounted for?
-   - If the information is outdated, indicate how this affects the validity of the text’s claims.
+   - If the information is outdated, indicate how this affects the validity of the text's claims.
 6. Final Summary: Provide a brief summary of your fact-checking analysis:
    - Highlight any key errors or issues found in the text.
    - Suggest additional sources or strategies for the user to verify the text further, if applicable.

@@ -12,10 +12,10 @@ This repo publishes a MkDocs + Material site from the `docs/` folder to GitHub P
 ## Source Layout
 
 - `docs/` — all site content and assets
-  - `learning/` — reading‑lists, notes, cheatsheets, roadmaps, glossary
+  - `learning/` — reading-lists, notes, cheatsheets, roadmaps, glossary
   - `prompts/` — prompt pages (some with tabs/accordions, copy buttons)
   - `styles/overrides.css` — site CSS overrides (copy button visibility, wrap styles)
-  - `assets/wrap-toggle.js` — global “Wrap” toggle (line‑wrap for code blocks)
+  - `assets/wrap-toggle.js` — global "Wrap" toggle (line-wrap for code blocks)
   - `README.md` — site home (appears as Home)
   - `CHANGELOG.md` — changelog page
 - `mkdocs.yml` — site config + nav
@@ -27,25 +27,25 @@ This repo publishes a MkDocs + Material site from the `docs/` folder to GitHub P
 
 Prereqs: Python 3.11+ recommended.
 
-```
+```bash
 pip install mkdocs mkdocs-material
 ```
 
 Run locally:
 
-```
+```bash
 mkdocs serve
 ```
 
 Build locally:
 
-```
+```bash
 mkdocs build
 ```
 
 Regenerate topics index (optional):
 
-```
+```powershell
 powershell -ExecutionPolicy Bypass -File scripts/generate-topic-index.ps1
 ```
 
@@ -64,7 +64,7 @@ powershell -ExecutionPolicy Bypass -File scripts/generate-topic-index.ps1
 Branch protection (recommended):
 
 - Settings → Branches → Protect `main` with required status checks:
-  - “Docs Checks (build + links)” must pass
+  - "Docs Checks (build + links)" must pass
   - Optionally require branch up to date before merging
 
 Do not edit `gh-pages` directly — it is an artifact branch and will be overwritten by deploys.
@@ -81,7 +81,7 @@ Do not edit `gh-pages` directly — it is an artifact branch and will be overwri
   - Accordions: `??? note "Title"` with indented fenced blocks
 - Code blocks:
   - Use fenced blocks (```) so copy buttons appear.
-  - Global Wrap toggle in header controls line‑wrapping.
+  - Global Wrap toggle in header controls line-wrapping.
 
 ---
 
