@@ -39,7 +39,9 @@ My original post has interesting comments on how to optimize this prompt, here.
 
 ## Tags
 
-news #fact-check #verification
+- news
+- fact-check
+- verification
 
 ## Version History
 
