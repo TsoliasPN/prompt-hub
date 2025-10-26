@@ -1064,14 +1064,21 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributing
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#quick-checklist" class="md-nav__link">
@@ -1125,7 +1132,9 @@
 
 
 
-<h1 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h1>
+  <h1>Contributing</h1>
+
+<h2 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h2>
 <p>Thanks for improving Prompt-Hub! This guide lists the essentials for contributing content.</p>
 <hr />
 <h2 id="quick-checklist">Quick Checklist<a class="headerlink" href="#quick-checklist" title="Permanent link">&para;</a></h2>
@@ -1152,13 +1161,25 @@
 </ul>
 <hr />
 <h2 id="add-a-new-page">Add a New Page<a class="headerlink" href="#add-a-new-page" title="Permanent link">&para;</a></h2>
-<p>1) Create the file under <code>docs/</code></p>
-<p>2) Add front matter (see above)</p>
-<p>3) (Optional) Add to sidebar nav: edit <code>mkdocs.yml</code> → <code>nav:</code></p>
-<p>4) (Optional) Update topics index:</p>
+<ol>
+<li>
+<p>Create the file under <code>docs/</code></p>
+</li>
+<li>
+<p>Add front matter (see above)</p>
+</li>
+<li>
+<p>(Optional) Add to sidebar nav: edit <code>mkdocs.yml</code> → <code>nav:</code></p>
+</li>
+<li>
+<p>(Optional) Update topics index:</p>
+</li>
+</ol>
 <div class="highlight"><pre><span></span><code><span class="n">powershell</span> <span class="n">-ExecutionPolicy</span> <span class="n">Bypass</span> <span class="o">-File</span> <span class="n">scripts</span><span class="p">/</span><span class="n">generate-topic-index</span><span class="p">.</span><span class="n">ps1</span>
 </code></pre></div>
-<p>5) Preview locally:</p>
+<ol>
+<li>Preview locally:</li>
+</ol>
 <div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>serve
 </code></pre></div>
 <hr />

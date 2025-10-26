@@ -46,4 +46,3 @@ Learning content
 
 - See [Contributing](CONTRIBUTING.md) for how to add/update content.
 - See [Developing](DEVELOPING.md) for local dev, CI, and deploy details.
-
