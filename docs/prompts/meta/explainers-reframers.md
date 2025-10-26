@@ -24,41 +24,39 @@ Model this topic as a parliament of archetypes. Record a one-minute debate trans
 Be the glitch in the matrix. Diagnose reality feature:  
 ```
 
-## Compact Views
+## Tabs View
 
-=== "Tabs View"
+=== "Causal Chains"
+    ```
+    Compress this topic. Speak only in causal chains. Topic:  
+    ```
 
-==== "Causal Chains"
-```
-Compress this topic. Speak only in causal chains. Topic:  
-```
+=== "Tweet/Story/Emoji"
+    ```
+    Compress this topic to a ≤ 140-character tweet, a six-word story, and a single emoji. Topic:  
+    ```
 
-==== "Tweet/Story/Emoji"
-```
-Compress this topic to a ≤ 140-character tweet, a six-word story, and a single emoji. Topic:  
-```
+=== "Metaphor Scales"
+    ```
+    Explain this concept at three metaphorical scales: “Quark”, “Earth”, “Galaxy”. One paragraph each. Topic:  
+    ```
 
-==== "Metaphor Scales"
-```
-Explain this concept at three metaphorical scales: “Quark”, “Earth”, “Galaxy”. One paragraph each. Topic:  
-```
+=== "Alien Explanation"
+    ```
+    Explain this human custom to a silicon-based species with zero culture overlap, in toddler-level syntax. Topic:  
+    ```
 
-==== "Alien Explanation"
-```
-Explain this human custom to a silicon-based species with zero culture overlap, in toddler-level syntax. Topic:  
-```
+=== "Parliament Debate"
+    ```
+    Model this topic as a parliament of archetypes. Record a one-minute debate transcript, then the final vote. Topic:  
+    ```
 
-==== "Parliament Debate"
-```
-Model this topic as a parliament of archetypes. Record a one-minute debate transcript, then the final vote. Topic:  
-```
+=== "Glitch in Matrix"
+    ```
+    Be the glitch in the matrix. Diagnose reality feature:  
+    ```
 
-==== "Glitch in Matrix"
-```
-Be the glitch in the matrix. Diagnose reality feature:  
-```
-
-=== "Accordion View"
+## Accordion View
 
 ??? note "Causal Chains"
     ```
