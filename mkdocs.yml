@@ -1,10 +1,23 @@
 site_name: prompt-hub
 site_description: High-quality LLM prompts and AI learning resources.
-# Set docs to repo root so existing Markdown is used
-docs_dir: .
+# Build from a dedicated docs directory (populated by scripts/prepare-docs.ps1)
+docs_dir: docs
 
 theme:
-  name: mkdocs
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
 
 markdown_extensions:
   - toc:
@@ -30,7 +43,8 @@ nav:
       - Overview: learning/README.md
       - Topics Index: learning/topics.md
       - Reading Lists:
-          - LLM Systems: learning/reading-lists/llm-systems.md`n          - AI Creators & Channels: learning/reading-lists/ai-creators-and-channels.md
+          - LLM Systems: learning/reading-lists/llm-systems.md
+          - AI Creators & Channels: learning/reading-lists/ai-creators-and-channels.md
       - Notes:
           - Transformer Intuition: learning/notes/transformers-intuition.md
       - Cheatsheets:
