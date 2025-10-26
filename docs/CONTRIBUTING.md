@@ -5,7 +5,7 @@ summary: What contributors need to know to add or update content.
 
 # Contributing
 
-Thanks for improving Prompt‑Hub! This guide lists the essentials for contributing content.
+Thanks for improving Prompt-Hub! This guide lists the essentials for contributing content.
 
 ---
 
@@ -15,10 +15,10 @@ Thanks for improving Prompt‑Hub! This guide lists the essentials for contribut
 - Keep pages short, clear, and useful; avoid link dumps.
 - Add YAML front matter at the top:
 
-```
+```yaml
 ---
 title: "Page Title"
-summary: "One‑line why it matters"
+summary: "One-line why it matters"
 type: reading-list|note|cheatsheet|roadmap
 level: beginner|intermediate|advanced
 topics: [llms, evals]
@@ -36,7 +36,7 @@ see_also:
 
 ## Add a New Page
 
-1) Create the file under `docs/…`
+1) Create the file under `docs/`
 
 2) Add front matter (see above)
 
@@ -44,13 +44,13 @@ see_also:
 
 4) (Optional) Update topics index:
 
-```
+```powershell
 powershell -ExecutionPolicy Bypass -File scripts/generate-topic-index.ps1
 ```
 
 5) Preview locally:
 
-```
+```bash
 mkdocs serve
 ```
 
@@ -71,5 +71,5 @@ mkdocs serve
 - Prefer concise bullets and short paragraphs.
 - Use meaningful section headers.
 - Prefer en/em dashes (–/—) over hyphen spam where appropriate.
-- Keep link text descriptive (not “here”).
+- Keep link text descriptive (not "here").
 

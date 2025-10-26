@@ -1149,10 +1149,10 @@
 <h2 id="source-layout">Source Layout<a class="headerlink" href="#source-layout" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>docs/</code> — all site content and assets</li>
-<li><code>learning/</code> — reading‑lists, notes, cheatsheets, roadmaps, glossary</li>
+<li><code>learning/</code> — reading-lists, notes, cheatsheets, roadmaps, glossary</li>
 <li><code>prompts/</code> — prompt pages (some with tabs/accordions, copy buttons)</li>
 <li><code>styles/overrides.css</code> — site CSS overrides (copy button visibility, wrap styles)</li>
-<li><code>assets/wrap-toggle.js</code> — global “Wrap” toggle (line‑wrap for code blocks)</li>
+<li><code>assets/wrap-toggle.js</code> — global "Wrap" toggle (line-wrap for code blocks)</li>
 <li><code>README.md</code> — site home (appears as Home)</li>
 <li><code>CHANGELOG.md</code> — changelog page</li>
 <li><code>mkdocs.yml</code> — site config + nav</li>
@@ -1161,16 +1161,16 @@
 <hr />
 <h2 id="local-development">Local Development<a class="headerlink" href="#local-development" title="Permanent link">&para;</a></h2>
 <p>Prereqs: Python 3.11+ recommended.</p>
-<div class="highlight"><pre><span></span><code>pip install mkdocs mkdocs-material
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs<span class="w"> </span>mkdocs-material
 </code></pre></div>
 <p>Run locally:</p>
-<div class="highlight"><pre><span></span><code>mkdocs serve
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>serve
 </code></pre></div>
 <p>Build locally:</p>
-<div class="highlight"><pre><span></span><code>mkdocs build
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>build
 </code></pre></div>
 <p>Regenerate topics index (optional):</p>
-<div class="highlight"><pre><span></span><code>powershell -ExecutionPolicy Bypass -File scripts/generate-topic-index.ps1
+<div class="highlight"><pre><span></span><code><span class="n">powershell</span> <span class="n">-ExecutionPolicy</span> <span class="n">Bypass</span> <span class="o">-File</span> <span class="n">scripts</span><span class="p">/</span><span class="n">generate-topic-index</span><span class="p">.</span><span class="n">ps1</span>
 </code></pre></div>
 <hr />
 <h2 id="ci-and-deploys">CI and Deploys<a class="headerlink" href="#ci-and-deploys" title="Permanent link">&para;</a></h2>
@@ -1188,7 +1188,7 @@
 <p>Branch protection (recommended):</p>
 <ul>
 <li>Settings → Branches → Protect <code>main</code> with required status checks:</li>
-<li>“Docs Checks (build + links)” must pass</li>
+<li>"Docs Checks (build + links)" must pass</li>
 <li>Optionally require branch up to date before merging</li>
 </ul>
 <p>Do not edit <code>gh-pages</code> directly — it is an artifact branch and will be overwritten by deploys.</p>
@@ -1203,7 +1203,7 @@
 <li>Accordions: <code>??? note "Title"</code> with indented fenced blocks</li>
 <li>Code blocks:</li>
 <li>Use fenced blocks (```) so copy buttons appear.</li>
-<li>Global Wrap toggle in header controls line‑wrapping.</li>
+<li>Global Wrap toggle in header controls line-wrapping.</li>
 </ul>
 <hr />
 <h2 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h2>
