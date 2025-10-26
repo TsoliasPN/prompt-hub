@@ -1,0 +1,11 @@
+# Treat LinkedIn as unreliable for automated link checks
+exclude = [
+  "https://www.linkedin.com/*"
+]
+
+max-concurrency = 8
+timeout = 20
+user_agent = "Mozilla/5.0 (compatible; PromptHubBot/1.0; +https://github.com/TsoliasPN/prompt-hub)"
+
+# Consider 429 as acceptable to avoid flakiness during rate limits
+accept = [200, 204, 301, 302, 307, 308, 429]
