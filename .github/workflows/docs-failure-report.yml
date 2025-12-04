@@ -1,0 +1,91 @@
+name: 'Docs: Failure Reporter'
+
+on:
+  workflow_run:
+    workflows: ['Docs: Check and Deploy']
+    types: [completed]
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: docs-failure-${{ github.event.workflow_run.id }}
+  cancel-in-progress: true
+
+jobs:
+  on-failure:
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open or update tracking issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const run = context.payload.workflow_run;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const branch = run.head_branch;
+            const sha = run.head_sha ? run.head_sha.substring(0,7) : '';
+            const url = run.html_url;
+            const title = `CI: Docs checks failing on ${branch}`;
+            const label = 'ci-failure';
+
+            // Try to find an open tracking issue for this branch
+            const list = await github.rest.issues.listForRepo({ owner, repo, state: 'open', labels: label, per_page: 100 });
+            const existing = list.data.find(i => i.title === title);
+
+            const body = [
+              `Docs checks failed on branch \`${branch}\` @ \`${sha}\`.`,
+              '',
+              `- Workflow run: ${url}`,
+              `- Event: ${run.event}`,
+              `- Attempt: ${run.run_attempt}`,
+              '',
+              'Please inspect the logs in the linked run. This issue will auto-close on the next green run for this branch.'
+            ].join('\n');
+
+            // Ensure label exists (best-effort)
+            try {
+              await github.rest.issues.createLabel({ owner, repo, name: label, color: 'B60205' });
+            } catch (e) {
+              // ignore if already exists or no permission
+            }
+
+            if (existing) {
+              await github.rest.issues.createComment({ owner, repo, issue_number: existing.number, body });
+              core.info(`Updated existing tracking issue #${existing.number}`);
+            } else {
+              const created = await github.rest.issues.create({ owner, repo, title, body, labels: [label] });
+              core.info(`Created tracking issue #${created.data.number}`);
+            }
+
+  on-success:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close tracking issue if present
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const run = context.payload.workflow_run;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const branch = run.head_branch;
+            const sha = run.head_sha ? run.head_sha.substring(0,7) : '';
+            const url = run.html_url;
+            const title = `CI: Docs checks failing on ${branch}`;
+            const label = 'ci-failure';
+            const list = await github.rest.issues.listForRepo({ owner, repo, state: 'open', labels: label, per_page: 100 });
+            const existing = list.data.find(i => i.title === title);
+            if (!existing) {
+              core.info('No open tracking issue to close.');
+              return;
+            }
+            const body = [
+              `Docs checks succeeded on branch \`${branch}\` @ \`${sha}\`.`,
+              `Green run: ${url}`
+            ].join('\n');
+            await github.rest.issues.createComment({ owner, repo, issue_number: existing.number, body });
+            await github.rest.issues.update({ owner, repo, issue_number: existing.number, state: 'closed' });
+            core.info(`Closed tracking issue #${existing.number}`);
