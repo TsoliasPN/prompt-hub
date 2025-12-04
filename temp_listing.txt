@@ -1,0 +1,44 @@
+1	---
+2	title: "LLM Systems: Curated Overview"
+3	summary: "High-signal resources for understanding and building LLM systems."
+4	type: reading-list
+5	level: intermediate
+6	topics: [llms, systems, rag, evals, agents]
+7	updated: 2025-10-26
+8	see_also:
+9	  - ../notes/transformers-intuition.md
+10	  - ../cheatsheets/retrieval-evals-cheatsheet.md
+11	---
+12	
+13	Quality bar: this list stays short and opinionated. Each link includes a why-it-matters note.
+14	
+15	## Foundations (Transformers + Attention)
+16	
+17	- The Illustrated Transformer — Clear visuals for attention and the encoder–decoder stack. <https://jalammar.github.io/illustrated-transformer/>
+18	- Attention Is All You Need (Vaswani et al., 2017) — The original Transformer paper; skim for architecture, read for intuition. <https://arxiv.org/abs/1706.03762>
+19	
+20	## Prompting + Patterns
+21	
+22	- OpenAI Cookbook — Practical prompting patterns, evaluation ideas, and tooling. <https://github.com/openai/openai-cookbook>
+23	- Prompt engineering patterns (assorted guides) — Use chain-of-thought, self-consistency, and structured outputs judiciously; measure impact, don't assume.
+24	
+25	## RAG (Retrieval-Augmented Generation)
+26	
+27	- Retrieval-Augmented Generation for Knowledge-Intensive NLP (Lewis et al., 2020) — The core idea and trade-offs. <https://arxiv.org/abs/2005.11401>
+28	- Vector databases (docs) — Focus on indexing choices, chunking strategies, and evaluation with domain text.
+29	
+30	## Evaluation
+31	
+32	- IR metrics primer — Precision/Recall@k, MRR, nDCG; know how they respond to re-ranking and chunking.
+33	- Task-specific evals — Measure faithfulness, answer correctness, and source attribution; prefer automatic + spot human audit.
+34	
+35	## Agents + Tool Use
+36	
+37	- Keep it simple first — Tool calling adds latency and failure modes; add only with clear ROI and guardrails.
+38	- Monitoring + fallback — Log tool inputs/outputs, timeouts, and define safe fallbacks.
+39	
+40	## Systems Design
+41	
+42	- Start with evals — Define success metrics before scaling complexity.
+43	- Observability — Capture prompts, versions, inputs, outputs, and model metadata for reproducibility.
+44	

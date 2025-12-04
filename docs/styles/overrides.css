@@ -1,0 +1,55 @@
+.md-typeset pre { position: relative; }
+
+/* Make copy button always visible and higher contrast */
+.md-typeset .md-clipboard {
+  opacity: 1 !important;
+  visibility: visible !important;
+  right: .35rem;
+  top: .35rem;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+
+.md-typeset .md-clipboard:hover { filter: brightness(1.1); }
+
+/* Slightly larger icon for clarity */
+.md-typeset .md-clipboard svg {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+/* Code wrap: opt-in via toggle, applied globally when enabled */
+:root.wrap-code-on .md-typeset pre code {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Header wrap toggle button */
+#wrap-toggle { display: inline-flex; align-items: center; justify-content: center; gap: .35rem; }
+#wrap-toggle .wrap-icon::before {
+  content: '↩︎'; /* wrap icon */
+  font-size: 1.1rem;
+  line-height: 1;
+}
+#wrap-toggle[data-state="on"] .wrap-icon::before {
+  content: '↪︎';
+}
+
+#wrap-toggle .wrap-label { 
+  font-size: .8rem; 
+  font-weight: 600; 
+}
+
+/* Improve contrast to stand out over header */
+.wrap-toggle-button { 
+  color: var(--md-primary-bg-color) !important; /* typically white on primary header */
+}
+
+@media (max-width: 600px) {
+  #wrap-toggle .wrap-label { display: none; }
+}
+
+/* Tooltip via title attr handled by browser; increase spacing around button */
+.md-header__options #wrap-toggle { margin-right: .25rem; }
