@@ -8,3 +8,5 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md) first.
 - Keep work scoped to `prompts`, `learning`, `templates`, `site`, `scripts`, `docs`.
 - Keep validation lightweight.
 - If learning topics change, regenerate `docs/learning/topics.md`.
+
+Shared agent execution protocol: see the `Agent execution protocol` section in `AGENTS.md`.

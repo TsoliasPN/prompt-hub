@@ -8,3 +8,5 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md) first.
 - Keep changes inside `prompts`, `learning`, `templates`, `site`, `scripts`, `docs`.
 - Prefer lightweight validation.
 - Regenerate `docs/learning/topics.md` only when learning topics change.
+
+Shared agent execution protocol: see the `Agent execution protocol` section in `AGENTS.md`.
